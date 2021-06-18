@@ -1,0 +1,43 @@
+.movie {
+  display: inline-block;
+  position: relative;
+}
+
+.movie .poster {
+  width: 10rem;
+  height: 15rem;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.movie:hover .poster {
+  width: 10rem;
+  height: 15rem;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.movie .title {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-top: 1rem;
+}
+
+.movie .vote {
+  position: absolute;
+  bottom: 4rem;
+  right: -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  color: var(--black);
+  background-color: var(--primary-color);
+  border: 5px solid var(--black);
+}

@@ -1,3 +1,14 @@
+:root {
+  --primary-color: #cc0000;
+  --primary-color2: #fe5e00;
+  --secondary-color: #000000;
+  --black: #000000;
+  --white: #ffffff;
+  --off-white: #fafafa;
+  --type-first: Arial, sans-serif;
+  --type-second: "Spectral", georgia;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,8 +20,6 @@ body {
   margin: 0;
   background-color: #fafafa;
   color: #707070;
-  --type-first: Arial, sans-serif;
-  --type-second: "Spectral", Georgia;
   font-family: var(--type-first);
 }
 
@@ -44,6 +53,11 @@ input {
 
 a {
   text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  min-height: calc(100vh - 8rem);
 }
 
 .container {

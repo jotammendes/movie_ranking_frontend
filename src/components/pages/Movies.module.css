@@ -1,0 +1,45 @@
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movies .start {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.movies .verify {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.movies .verify:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.movies h1 {
+  width: 100%;
+}
+
+.movie {
+  display: flex;
+  flex-wrap: wrap;
+  width: 10rem;
+  margin: 4rem 2rem;
+  color: var(--black);
+  transition: 0.3s;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+}

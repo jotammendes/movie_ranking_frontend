@@ -1,0 +1,105 @@
+.back {
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #707070;
+}
+
+.back::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 20px;
+  margin-right: 0.5rem;
+  background: url("../../assets/arrow-left.svg") no-repeat center center;
+}
+
+.movie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.movie .poster {
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.movie .infos {
+  margin-left: 2rem;
+  max-width: 40rem;
+  width: calc(50% - 2rem);
+}
+
+@media (max-width: 1400px) {
+  .movie .poster {
+    width: 20rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  .movie {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .movie .infos {
+    width: 100%;
+    margin: 2rem 0 0 0;
+  }
+}
+
+.infos p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.infos p span {
+  font-weight: bold;
+}
+
+.infos .votes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.votes .vote {
+  display: flex;
+  height: 5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+
+.votes .value {
+  display: flex;
+  font-weight: bold;
+  font-size: 2.625rem;
+  line-height: 3rem;
+  background: var(--off-white);
+  padding: 0.5rem 1rem;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.votes .font {
+  display: flex;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+  background: var(--primary-color);
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
