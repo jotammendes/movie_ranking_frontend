@@ -1,5 +1,8 @@
 .movie {
   display: inline-block;
+}
+
+.poster_vote {
   position: relative;
 }
 
@@ -26,7 +29,7 @@
 
 .movie .vote {
   position: absolute;
-  bottom: 4rem;
+  bottom: -1rem;
   right: -1rem;
   display: flex;
   justify-content: center;
